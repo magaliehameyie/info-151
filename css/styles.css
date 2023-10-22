@@ -14,8 +14,8 @@ html {
   --black: #000000;
   --white: #ffffff;
   --purple: #461096;
-  --lightblue: #ECF9FF;
-  --blue: #42B4EE;
+  --blue: #2AF6FF;
+  --lavender: #4B61B8;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -336,6 +336,13 @@ template {
 ============= */
 body {
   background-color: var(--purple);
+  color: white;
+}
+body div ul li button {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 8px 10px;
+  border-radius: 6px;
 }
 
 /* =============
@@ -359,6 +366,13 @@ ul {
 /* =============
     Buttons
 ============= */
+.blue-btn {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+
 /* =============
     Forms
 ============= */
@@ -385,9 +399,22 @@ textarea {
 /* =============
     Header
 ============= */
+header nav ul li a {
+  background-color: rgb(136, 105, 213);
+}
+header nav ul #demo {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+
 /* =============
     Footer
 ============= */
 /* =============
     Hero
 ============= */
+#hero {
+  margin-top: 40px;
+}

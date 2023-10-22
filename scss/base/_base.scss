@@ -4,4 +4,21 @@
 
 body{
     background-color: var(--purple);
-}
+    color: white;
+
+    div{
+            ul{
+                li{
+                    button{
+                        background-color: var(--blue);
+                        color:var(--white);
+                        padding: 8px 10px;
+                        border-radius: 6px;
+
+                    }
+                }
+            }
+        }
+     
+    }
+
