@@ -1,3 +1,20 @@
 /* =============
     Footer
 ============= */
+
+footer{
+    color: var(--white);
+    #footer-top{
+        background-color: var(--darkgreen);
+
+        a{
+            color: var(--green);
+        }
+
+    }
+
+    #footer-bottom{
+        background-color: var(--black);
+
+    }
+}
