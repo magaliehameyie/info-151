@@ -1,3 +1,32 @@
 /* =============
     Buttons
 ============= */
+
+.blue-btn{
+
+    background-color: var(--blue);
+    color:var(--white);
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+
+.red-btn{
+    background-color: var(--red);
+    color:var(--white);
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+
+.green-btn{
+    background-color: var(--green);
+    color:var(--white);
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+
+.orange-btn{
+    background-color: var(--orange);
+    color:var(--white);
+    padding: 8px 10px;
+    border-radius: 6px;
+}

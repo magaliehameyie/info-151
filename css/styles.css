@@ -16,6 +16,10 @@ html {
   --purple: #461096;
   --blue: #2AF6FF;
   --lavender: #4B61B8;
+  --green:#5EBD14;
+  --orange:#EF821E;
+  --brown: #9B6717;
+  --red: #A52626;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -334,16 +338,21 @@ template {
 /* =============
     Base
 ============= */
+body {
+  background-color: var(--brown);
+  color: beige;
+}
+
 /* =============
     Typography
 ============= */
 h1, h2, h3, h4, h5 {
-  margin: 0;
+  margin: 20px;
   padding: 0;
 }
 
 p {
-  margin: 0;
+  margin: 0px;
   padding: 0;
 }
 
@@ -355,6 +364,34 @@ ul {
 /* =============
     Buttons
 ============= */
+.blue-btn {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+
+.red-btn {
+  background-color: var(--red);
+  color: var(--white);
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+
+.green-btn {
+  background-color: var(--green);
+  color: var(--white);
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+
+.orange-btn {
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+
 /* =============
     Forms
 ============= */
