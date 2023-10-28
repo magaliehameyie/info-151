@@ -1,3 +1,35 @@
 /* =============
     Navigation
 ============= */
+
+a{
+    text-decoration: none;
+}
+nav{
+    ul{
+        display: flex;
+        justify-content: flex-end;
+        li{
+            list-style: none ;
+            margin-left: 25px;
+            a:link, a:visited{
+                color:var(--white);
+                font-size: rem-calc(14);
+                font-weight:600;
+
+            }
+
+            a:hover, a:active{
+                color:var(--blue);
+
+            }
+
+            a.selected{
+                color:var(--blue);
+           }
+
+            
+        }
+        
+    }
+}

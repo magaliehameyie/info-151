@@ -358,6 +358,7 @@ h1, h2, h3, h4, h5 {
 }
 
 p {
+  font-family: "Nanum Gothic", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -400,17 +401,42 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+nav ul li {
+  list-style: none;
+  margin-left: 25px;
+}
+nav ul li a:link, nav ul li a:visited {
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+nav ul li a:hover, nav ul li a:active {
+  color: var(--blue);
+}
+nav ul li a.selected {
+  color: var(--blue);
+}
+
 /* =============
     Header
 ============= */
-header nav ul li a {
-  background-color: rgb(136, 105, 213);
-}
-header nav ul #demo {
-  background-color: var(--blue);
-  color: var(--white);
-  padding: 8px 10px;
+header {
+  background-color: var(--purple);
+  padding: 22px;
   border-radius: 6px;
+  margin-top: 50px;
 }
 
 /* =============
@@ -419,10 +445,20 @@ header nav ul #demo {
 /* =============
     Hero
 ============= */
-#hero {
-  margin-top: 40px;
+#hero section #hero-title-container-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-#hero div h2 {
-  font-family: "Abhaya Libre", serif;
-  font-size: 3.125rem;
+#hero p {
+  margin-top: 20px;
+  color: var(--white);
+}
+
+#hero-button {
+  margin-top: 30px;
+}
+
+#hero-img {
+  margin-left: 20px;
 }
