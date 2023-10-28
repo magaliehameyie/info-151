@@ -339,7 +339,7 @@ template {
     Base
 ============= */
 body {
-  background-color: var(--brown);
+  background-color: var(--lavender);
   color: beige;
 }
 
@@ -427,3 +427,17 @@ textarea {
 /* =============
     Footer
 ============= */
+/* =============
+    Plans
+============= */
+#plans {
+  margin-left: 35px;
+  font-size: 1.25rem;
+}
+
+div #plans-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 250px;
+}
