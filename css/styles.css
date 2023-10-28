@@ -348,6 +348,10 @@ body div ul li button {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
@@ -417,4 +421,8 @@ header nav ul #demo {
 ============= */
 #hero {
   margin-top: 40px;
+}
+#hero div h2 {
+  font-family: "Abhaya Libre", serif;
+  font-size: 3.125rem;
 }
