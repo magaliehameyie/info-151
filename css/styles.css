@@ -399,6 +399,7 @@ textarea {
     Footer
 ============= */
 footer {
+  font-family: "Open Sans", sans-serif;
   color: var(--white);
 }
 footer #footer-top {
@@ -408,5 +409,6 @@ footer #footer-top a {
   color: var(--green);
 }
 footer #footer-bottom {
+  font-family: "Clicker Script", cursive;
   background-color: var(--black);
 }

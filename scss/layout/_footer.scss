@@ -3,6 +3,8 @@
 ============= */
 
 footer{
+    
+    font-family: 'Open Sans', sans-serif;
     color: var(--white);
     #footer-top{
         background-color: var(--darkgreen);
@@ -14,6 +16,7 @@ footer{
     }
 
     #footer-bottom{
+        font-family: 'Clicker Script', cursive;
         background-color: var(--black);
 
     }
