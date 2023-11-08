@@ -8,17 +8,60 @@ footer{
     color: var(--white);
     #footer-top{
         background-color: var(--darkgreen);
+        display:grid;
+        grid-template-columns: auto 1170px auto;
+        grid-template-areas: ". ftgi . ";
+
+    
+        #footer-top-grid-item{
+            grid-area: ftgi;
+            display: grid;
+            grid-template-columns: 40% 20% 20% auto; 
+
+
+            div{
+                #social-links{
+                    display:flex;
+                    li{
+                        margin-right: 20px;
+
+                        a:link, a:visited{
+                            height:30px;
+                            width: 30px;
+                            border: 1px solid var(--green);
+                            border-radius: 100%;
+                            display:flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+
+              
+            a{
+                color: var(--green);
+                display: flex;
+                margin-left: 10px;
+                font-size: rem-calc(16);
+    
+            }
+
+            a:link, a:visited{
+                color: var(--green);
+                transition:0.25s;
+
+            }
+
+            a.hover, a:active{
+                color: var(--green);
+            }
 
     
 
-        a{
-            color: var(--green);
-            display: flex;
-            margin-left: 10px;
-            font-size: rem-calc(16);
-
         }
 
+      
       
 
         
@@ -30,6 +73,22 @@ footer{
 
     #footer-bottom{
         font-family: 'Clicker Script', cursive;
-        background-color: var(--black);
+        padding: 27px 0;
+        display: grid;
+        grid-template-columns: auto 1170px auto;
+        grid-template-areas:  ". fbgi . ";
+
+        #footer-bottom-grid-item{
+            background-color: var(--darkgreen);
+            grid-area: fbgi;
+            display:flex;
+            //text-align:center;
+            //margin-left: 80px;
+
+        
+             
+
+             
+        }
 
     }

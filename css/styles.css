@@ -341,6 +341,15 @@ template {
 ============= */
 #validation-logo {
   margin-top: 40px;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
 }
 
 /* =============
@@ -392,6 +401,11 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
 /* =============
     Header
 ============= */
@@ -404,8 +418,45 @@ footer {
 }
 footer #footer-top {
   background-color: var(--darkgreen);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1170px auto;
+  grid-template-columns: auto 1170px auto;
+      grid-template-areas: ". ftgi . ";
 }
-footer #footer-top a {
+footer #footer-top #footer-top-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: ftgi;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 20% 20% auto;
+  grid-template-columns: 40% 20% 20% auto;
+}
+footer #footer-top #footer-top-grid-item div #social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer #footer-top #footer-top-grid-item div #social-links li {
+  margin-right: 20px;
+}
+footer #footer-top #footer-top-grid-item div #social-links li a:link, footer #footer-top #footer-top-grid-item div #social-links li a:visited {
+  height: 30px;
+  width: 30px;
+  border: 1px solid var(--green);
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer #footer-top #footer-top-grid-item a {
   color: var(--green);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -413,8 +464,30 @@ footer #footer-top a {
   margin-left: 10px;
   font-size: 1rem;
 }
+footer #footer-top #footer-top-grid-item a:link, footer #footer-top #footer-top-grid-item a:visited {
+  color: var(--green);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+footer #footer-top #footer-top-grid-item a.hover, footer #footer-top #footer-top-grid-item a:active {
+  color: var(--green);
+}
 
 #footer-bottom {
   font-family: "Clicker Script", cursive;
-  background-color: var(--black);
+  padding: 27px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1170px auto;
+  grid-template-columns: auto 1170px auto;
+      grid-template-areas: ". fbgi . ";
+}
+#footer-bottom #footer-bottom-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  background-color: var(--darkgreen);
+  grid-area: fbgi;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
