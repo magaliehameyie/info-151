@@ -13,6 +13,8 @@
         #plans-img{
             display:flex;
             margin-left: 250px;
+            display:grid;
+            grid-template-columns: 40% auto;
 
         }
     }

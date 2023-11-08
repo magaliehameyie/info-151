@@ -440,4 +440,8 @@ div #plans-img {
   display: -ms-flexbox;
   display: flex;
   margin-left: 250px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% auto;
+  grid-template-columns: 40% auto;
 }
