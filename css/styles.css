@@ -338,6 +338,18 @@ body {
   background-color: var(--purple);
   color: white;
 }
+body main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1170px auto;
+  grid-template-columns: auto 1170px auto;
+      grid-template-areas: ". main-grid-item .";
+}
+body main #main-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main-grid-item;
+}
 body div ul li button {
   background-color: var(--blue);
   color: var(--white);
@@ -445,6 +457,13 @@ header {
 /* =============
     Hero
 ============= */
+#hero {
+  margin-top: 90px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% auto;
+  grid-template-columns: 40% auto;
+}
 #hero div #hero-title-container-top {
   display: -webkit-box;
   display: -ms-flexbox;
