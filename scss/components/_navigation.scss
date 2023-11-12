@@ -1,3 +1,66 @@
 /* =============
     Navigation
 ============= */
+
+ a{
+    text-decoration: none;
+ }
+
+ nav{
+    margin-top: 12px;
+    padding-top: 20px;
+    border-top: 1px solid var(--gray);
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        li{
+            a:link, a:visited{
+                padding: 10px;
+                display: inline-block;
+                margin-bottom: 12px;
+                color: var(--black);
+                transition: 0.25s;
+            }
+
+            a:hover, a:active{
+                color: var(--green);
+            }
+
+            .SignIn-btn{
+                background-color: var(--green);
+                color: var(--white);
+                border-radius: 8px;
+                padding: 12px;
+                font-weight: 600;
+                border: none;
+                transition: 0.25s;
+                cursor: pointer;
+            }
+
+            .SignIn-btn:hover{
+                background-color: var(--gray);
+                color: var(--green);
+            }
+
+            .SignUp-btn{
+                background-color: var(--white);
+                color: var(--green);
+                border-radius: 8px;
+                padding: 12px;
+                font-weight: 600;
+                border: none;
+                transition: 0.25s;
+                cursor: pointer;
+            }
+
+            .SignUp-btn:hover{
+                background-color: var(--gray);
+                color: var(--black);
+
+        }
+    }
+}
+
+}
