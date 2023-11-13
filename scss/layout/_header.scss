@@ -6,23 +6,47 @@
     padding: 12px 24px;
     display: grid;
     grid-template-columns: 50% 8%;
-    grid-template-areas: 
-    "logo burger"
-    "nav nav";
+    grid-template-areas: "logo burger" "nav nav";
+
+    @include md{
+        grid-template-columns: 50% auto 4%;
+    }
+
+    @include lg{
+        grid-template-columns: 20% auto 4%;
+    }
+
+    @include xl{
+        grid-template-columns: 15% 50%;
+        grid-template-areas:"logo nav";
+
+        padding: 24px 48px;
+    }
+    
 
     #logo-container{
         display: flex;
         align-items: center;
         grid-area: logo;
+
+        grid-template-areas: 
+        "logo search nav";
+
+        padding: 24px 48px;
     }
+    
 
     #burger-container{
         display: flex;
         justify-content: flex-end;
         align-items: center;
         grid-area: burger;
+
+        @include xl{
+            display:none;
+        }
     }
     nav{
         grid-area: nav;
  }
-}
+ }

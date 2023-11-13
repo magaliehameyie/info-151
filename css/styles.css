@@ -394,9 +394,18 @@ a {
 }
 
 nav {
+  display: none;
   margin-top: 12px;
   padding-top: 20px;
   border-top: 1px solid var(--gray);
+}
+@media (min-width: 1200px) {
+  nav {
+    border: none;
+    margin-top: 0;
+    padding-top: 0;
+    display: block;
+  }
 }
 nav ul {
   display: -webkit-box;
@@ -410,6 +419,21 @@ nav ul {
       -ms-flex-align: end;
           align-items: flex-end;
 }
+@media (min-width: 1200px) {
+  nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+}
 nav ul li a:link, nav ul li a:visited {
   padding: 10px;
   display: inline-block;
@@ -417,6 +441,15 @@ nav ul li a:link, nav ul li a:visited {
   color: var(--black);
   -webkit-transition: 0.25s;
   transition: 0.25s;
+}
+@media (min-width: 1200px) {
+  nav ul li {
+    height: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-bottom: 0px;
+    padding: 12px;
+  }
 }
 nav ul li a:hover, nav ul li a:active {
   color: var(--green);
@@ -463,6 +496,26 @@ header {
   grid-template-columns: 50% 8%;
       grid-template-areas: "logo burger" "nav nav";
 }
+@media (min-width: 768px) {
+  header {
+    -ms-grid-columns: 50% auto 4%;
+    grid-template-columns: 50% auto 4%;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    -ms-grid-columns: 20% auto 4%;
+    grid-template-columns: 20% auto 4%;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    -ms-grid-columns: 15% 50%;
+    grid-template-columns: 15% 50%;
+        grid-template-areas: "logo nav";
+    padding: 24px 48px;
+  }
+}
 header #logo-container {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -473,6 +526,8 @@ header #logo-container {
       -ms-flex-align: center;
           align-items: center;
   grid-area: logo;
+      grid-template-areas: "logo search nav";
+  padding: 24px 48px;
 }
 header #burger-container {
   -ms-grid-row: 1;
@@ -488,11 +543,27 @@ header #burger-container {
           align-items: center;
   grid-area: burger;
 }
+@media (min-width: 1200px) {
+  header #burger-container {
+    display: none;
+  }
+}
 header nav {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: nav;
+}
+@media (min-width: 1200px) {
+  header #logo-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  header nav {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
 }
 
 /* =============
