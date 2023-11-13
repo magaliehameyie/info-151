@@ -389,25 +389,29 @@ textarea {
 /* =============
     Navigation
 ============= */
+.showMainNav {
+  display: block !important;
+}
+
 a {
   text-decoration: none;
 }
 
-nav {
+#mainNav {
   display: none;
   margin-top: 12px;
   padding-top: 20px;
   border-top: 1px solid var(--gray);
 }
 @media (min-width: 1200px) {
-  nav {
+  #mainNav {
     border: none;
     margin-top: 0;
     padding-top: 0;
     display: block;
   }
 }
-nav ul {
+#mainNav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,7 +424,7 @@ nav ul {
           align-items: flex-end;
 }
 @media (min-width: 1200px) {
-  nav ul {
+  #mainNav ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -434,7 +438,7 @@ nav ul {
     height: 100%;
   }
 }
-nav ul li a:link, nav ul li a:visited {
+#mainNav ul li a:link, #mainNav ul li a:visited {
   padding: 10px;
   display: inline-block;
   margin-bottom: 12px;
@@ -443,7 +447,7 @@ nav ul li a:link, nav ul li a:visited {
   transition: 0.25s;
 }
 @media (min-width: 1200px) {
-  nav ul li {
+  #mainNav ul li {
     height: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -451,10 +455,10 @@ nav ul li a:link, nav ul li a:visited {
     padding: 12px;
   }
 }
-nav ul li a:hover, nav ul li a:active {
+#mainNav ul li a:hover, #mainNav ul li a:active {
   color: var(--green);
 }
-nav ul li .SignIn-btn {
+#mainNav ul li .SignIn-btn {
   background-color: var(--green);
   color: var(--white);
   border-radius: 8px;
@@ -465,11 +469,11 @@ nav ul li .SignIn-btn {
   transition: 0.25s;
   cursor: pointer;
 }
-nav ul li .SignIn-btn:hover {
+#mainNav ul li .SignIn-btn:hover {
   background-color: var(--gray);
   color: var(--green);
 }
-nav ul li .SignUp-btn {
+#mainNav ul li .SignUp-btn {
   background-color: var(--white);
   color: var(--green);
   border-radius: 8px;
@@ -480,7 +484,7 @@ nav ul li .SignUp-btn {
   transition: 0.25s;
   cursor: pointer;
 }
-nav ul li .SignUp-btn:hover {
+#mainNav ul li .SignUp-btn:hover {
   background-color: var(--gray);
   color: var(--black);
 }

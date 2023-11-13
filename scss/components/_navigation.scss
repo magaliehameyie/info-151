@@ -2,11 +2,16 @@
     Navigation
 ============= */
 
- a{
-    text-decoration: none;
- }
+.showMainNav{
+    display: block !important;
+}
 
- nav{
+
+a{
+    text-decoration: none;
+}
+
+#mainNav{
     display: none;
     margin-top: 12px;
     padding-top: 20px;
