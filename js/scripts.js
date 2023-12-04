@@ -1,3 +1,15 @@
+Fancybox.bind();
+
+const container = document.querySelector("#myCarousel");
+
+const options = { infinite: true };
+
+new Carousel(container, options);
+
+/* --------------------
+
+   Nav
+ -------------------- */
 var mainNav = document.querySelector("#main-nav");
 var signInUpButtons = document.querySelector("#sign-in-up-buttons");
 var burgerBtn = document.querySelector("#burger-container button");

@@ -10,6 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- FancyApps -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"/>
+
     <link rel="stylesheet" href="css/styles.css">
     <title> Week 10 Fancy Apps </title>
 </head>
@@ -70,13 +76,54 @@
 
 
     </section>
+
+    <section id="fancybox">
+        <div id="fb-grid-item">
+            <h1>Fancybox</h1>
+            <ul>
+                <li>
+                    <a href="img/fancy/fancy-1.jpg" data-fancybox, data-fancybox="gallery-1"><img src="img/fancy/fancy-1.jpg" alt="plamtree"></a>
+                </li>
+
+                <li>
+                    <a href="img/fancy/fancy-2.jpg" data-fancybox, data-fancybox="gallery-2"><img src="img/fancy/fancy-3.jpg" alt="central park"></a>
+                </li>
+
+                <li>
+                    <a href="img/fancy/fancy-3.jpg" data-fancybox, data-fancybox="gallery-1"><img src="img/fancy/fancy-2.jpg" alt="plants"></a>
+                </li>
+
+                <li>
+                    <a href="img/fancy/fancy-4.jpg" data-fancybox, data-fancybox="gallery-2"><img src="img/fancy/fancy-4.jpg" alt="birds"></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="fancyCarousel">
+        <div id="fc-grid-item">
+            <h1>Fancy Carousel</h1>
+            <div class="f-carousel" id="myCarousel">
+                
+
+                <div class="f-carousel__slide"><div id="fc-1" class="slide"></div></div>
+                <div class="f-carousel__slide"><div id="fc-2" class="slide"></div></div>
+                <div class="f-carousel__slide"><div id="fc-3" class="slide"></div></div>
+                <div class="f-carousel__slide"><div id="fc-4" class="slide"></div></div>
+            </div>
+
+        </div>
+    </section>
+
     <div id="validation-btn">
         <a href=" https://validator.w3.org/nu/?doc=https://week-10-fancyapps--info-151-mh3567.netlify.app/" target="_blank">
             <img src="img/html-logo.svg" alt="Valid HTML 5">
             </a>
     </div>
 
-
+    <!-- FancyBox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
 
     <script src="js/scripts-dist.js"></script>
     
