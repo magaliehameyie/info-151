@@ -1,3 +1,48 @@
 /* =============
     Buttons
 ============= */
+
+button{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    
+}
+
+.white-btn{
+    border: 1px solid var(-green);
+    padding: 16px 24px; 
+    background-color: var(--white);
+    transition: 0.25s; 
+    color: var(--green); 
+    border-radius: 8px;
+}
+
+.send-btn{
+    border: 1px solid var(--verylightgreen);
+    padding: 16px 24px; 
+    background-color: var(--verylightgreen);
+    transition: 0.25s; 
+    color: var(--white); 
+    border-radius: 8px;
+}
+
+.cancel-btn{
+    border: 1px solid var(--red);
+    padding: 16px 24px; 
+    background-color: var(--red);
+    transition: 0.25s; 
+    color: var(--white); 
+    border-radius: 8px;
+}
+
+.close-btn{
+    background-color: var(--red);
+    height: 50px; 
+    width: 50px; 
+    border-radius:100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    color: var(--white);
+}
