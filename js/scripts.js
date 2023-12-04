@@ -59,11 +59,11 @@ burgerBtn.addEventListener("click", showNav);
 
 
  function showSignUpModal() {
-    // console.log("show modal now");
+    
     signUpContainer.classList.add("show-signUp-container");
-    // hide the navigation on close
+    
     mainNav.classList.remove("showMainNav");
-    // hide the signup/in buttons
+   
     signInUpButtons.classList.remove("showSignUp");
  }
 
