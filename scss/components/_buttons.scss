@@ -46,3 +46,26 @@ button{
     align-items: center;
     color: var(--white);
 }
+
+.SignIn-btn{
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: 600;
+    border: none;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.SignUp-btn{
+    background-color: var(--whiteish);
+    color: var(--green);
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: 600;
+    border: none;
+    transition: 0.25s;
+    cursor: pointer;
+}
+

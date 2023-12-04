@@ -2,12 +2,24 @@
     Base
 ============= */
 
+.show-signUp-container{
+    display: flex !important;
+}
+
+.hide-burger-x{
+    display: none !important;
+}
+
+.hide-burger-bars{
+    display: none !important;
+}
+
 
 ul{
-    padding:0;
-    margin:0;
+    margin: 0;
+    padding: 0;
     li{
-         list-style: none ;
+        list-style: none;
     }
 }
 

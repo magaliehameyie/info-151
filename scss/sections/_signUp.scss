@@ -3,6 +3,8 @@
 ============= */
 
 #sign-up-container{
+
+
     //background-color: var(--lightgreen);
     background-color: #024A58B3;
     height: 100vh;
@@ -14,6 +16,8 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    display : none;
+
 
     form{
         background-color: #024A58CC ;
