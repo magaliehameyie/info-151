@@ -731,7 +731,6 @@ header #burger-container button {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
-  display: none;
 }
 #sign-up-container form {
   background-color: rgba(2, 74, 88, 0.8);
